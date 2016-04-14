@@ -1,5 +1,6 @@
 body {
   background-color: #F2E6DC;
+  font:  300 100%/1.6 'Open Sans Condensed',sans-serif;
 }
 
 .instructions {
@@ -84,10 +85,12 @@ body {
 /* position the image at the bottom of the buttons */
 .house {
   position: absolute;
-  top: -44px;
-  z-index: -1;
+  top: -22px;
   opacity: .6;
   width: 444px;
+}
+.greeting {
+  font-size: 155%;
 }
 
 .footer {
