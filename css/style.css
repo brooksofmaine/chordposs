@@ -1,4 +1,9 @@
+/* make footer appear at bottom: set html height and body html to 100% */
+ {
+  height: 100%;
+}
 body {
+  height: 100%;
   background-color: #F2E6DC;
   font:  300 100%/1.6 'Open Sans Condensed',sans-serif;
 }
@@ -89,11 +94,17 @@ body {
   opacity: .6;
   width: 444px;
 }
+
 .greeting {
+  display: none; /*hide the greeting until the house image is clicked */
   font-size: 155%;
 }
 
-.footer {
-  background-color: #F2E6DC !important;
-  font-size: 99%;
+.footer-look {
+  position: relative; /* relative to the buttons */
+  top: 300px; /* leave room for the house image and house greeting*/
+  margin-left: 54%;
+  padding-bottom: 7px; /* raise the footer enough so that its anchor tag can be clicked */
+  background-color: #F2E6DC;
+  font-size: 122%;
 }

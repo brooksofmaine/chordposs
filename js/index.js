@@ -5,10 +5,16 @@ $(document).ready(function(){
 	}, function() {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
 	});
-//handle click on house image
-console.log("above house click");
-  $('.house').click(function() {
-  	console.log("clicked");
-    $('.greeting').html("May there always be harmony in your house.");
-  });
+
+	 $('.house').click(function(){
+ 	// $('.greeting').html("May there always be harmony in your house.");
+ 		//$('.greeting').toggle(function(){
+ 			console.log("clicked");
+ 			$('.greeting').css({"display": "block"}).delay (2000).fadeOut(600);
+ 			//$('.greeting').fadeOut(600);
+
+ 		//$('greeting').slideUp(600).delay(1200).fadeOut(600);
+ 		//$( ".greeting" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+ 	});
+
 });
