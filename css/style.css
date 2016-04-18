@@ -11,6 +11,9 @@ body {
 .instructions {
   text-align: center;
 }
+.big-letter {
+  font-size: 144%;
+}
 
 /* customize the colors of the bootstrap buttons */
 .btn-default,
@@ -90,13 +93,16 @@ body {
 /* position the image at the bottom of the buttons */
 .house {
   position: absolute;
-  top: -22px;
+  top: -55px;
   opacity: .6;
   width: 444px;
 }
 
 .greeting {
   display: none; /*hide the greeting until the house image is clicked */
+  position: relative;
+  top: -44px;
+  margin-left: -11px;
   font-size: 155%;
 }
 
