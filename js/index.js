@@ -1,5 +1,14 @@
 $(document).ready(function(){
 	var greetingOn = false; //flag for the state of the greeting display
+
+	//make the dropdowns open when hovered or clicked:
+	$('.dropdown').hover(function() {
+ 		$(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(500);
+		}, function() {
+ 		$(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
+	});
+
+
 	
 	//make the house image display a greeting if clicked:
 	 $('.house').click(function(){
