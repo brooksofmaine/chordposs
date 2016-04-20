@@ -79,6 +79,17 @@ body {
   font-size: 144%;
 }
 
+/* make the divider lines bolder */
+hr {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  border-color: #DEC8B6;
+}
+
+.divider {
+ border-color: #000; 
+}
+
 .dropdown-toggle {
   width: 100%;
   text-align: center;
