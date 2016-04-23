@@ -43,7 +43,7 @@ $(document).ready(function(){
 		if (greetingOn === true) {
 		$('.greeting').fadeOut(360);
  			greetingOn = false;
-
+console.log("greetingOn is " + greetingOn);
 		}
 	});
 
