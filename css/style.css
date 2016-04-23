@@ -32,6 +32,10 @@ h4 {
   margin-bottom: 0.1em;
   border-color: #DEC8B6;
   font-size: 1%;
+
+}
+ 
+a { color: #333;
 }
 .instructions {
   font-size: 155%;
@@ -145,10 +149,10 @@ hr {
 
 .footer-look {
   position: relative; /* relative to the buttons */
-  top: 155px; /* leave room for the house image and house greeting*/
+  /*top: 144px; /* leave room for the house image and house greeting*/
   /*right: 0px;*/
   /*margin-left: 54%; */
-  padding-bottom: 7px; /* raise the footer enough so that its anchor tag can be clicked */
+  /*padding-bottom: 22px !important; /* raise the footer enough so that its anchor tag can be clicked */
   background-color: #F2E6DC;
   text-align: right;
   font-size: 122%;
