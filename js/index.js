@@ -4,11 +4,20 @@ $(document).ready(function(){
 	//make the dropdowns open when hovered or clicked:
 	$('.dropdown').hover(function() {
  		$(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(500);
-		}, function() {
+	}, function() {
  		$(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
 	});
 
+	//make the house image display if hovered over
 
+	$('.house').hover (function() {
+		$('.greeting').stop(true, true).delay(50).fadeIn(500);
+	}, function(){
+		$('.greeting').stop(true, true).delay(50).fadeOut(300);
+
+	});
+
+/*
 	
 	//make the house image display a greeting if clicked:
 	 $('.house').click(function(){
@@ -22,4 +31,5 @@ $(document).ready(function(){
  			greetingOn = false;
  		}			
  	});
+ */
 });
