@@ -1,11 +1,13 @@
-/* make footer appear at bottom: set html height and body html to 100% */
- {
+  /* in order to make footer appear at bottom: set html height and body html to 100% */
+/* {
   height: 100%;
 }
+*/
+
 body {
-  height: 100%;
+  /*height: 100%;*/
   background-color: #F2E6DC;
-  font:  300 100%/1.6 'Open Sans Condensed',sans-serif;
+  font: 300 100%/1.6 'Open Sans Condensed', sans-serif;
 }
 
 /* temporary borders for checking container sizes
@@ -18,30 +20,67 @@ border-color: #000;
 }
 */
 
-.big-container, .top-row, .instructions {
+.big-container,
+.top-row,
+.instructions {
   text-align: center;
 }
 
 h4 {
   line-height: 11px;
-
 }
 
 .headline-hr {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
+  text-align: center;
   border-color: #DEC8B6;
   font-size: 1%;
+}
 
+.menu-lines {
+  margin-top: -.4em;
+  margin-bottom: .01ß em;
+  width: 24px;
 }
- 
-a { color: #333;
+
+/* position the info icon that has the 3 horizontal lines*/
+.info {
+  text-align: left !important;
+  padding: 19px;
 }
+
+/* set the size for the single line of instructions below the headline */
 .instructions {
   font-size: 155%;
 }
 
+/* make the first letter big to guide the eye */
 .big-letter {
+  font-size: 144%;
+}
+
+/* set spacing and color of horizontal divider lines in the dropdowns*/
+hr {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-color: #DEC8B6;
+}
+
+
+/* adjust the size of the buttons with the note names */
+.dropdown-toggle {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* adust the size of the chords listed in the dropdowns */
+.dropdown-menu {
+  min-width: 100%;
+  background-color: #F5EAE1 !important;
+  /*override the default */
+  text-align: center;
   font-size: 144%;
 }
 
@@ -105,33 +144,7 @@ a { color: #333;
   box-shadow: 3px 2px 0 0 #DBD2CA;
 }
 
-.chord {
-  font-size: 144%;
-}
-
-/* make the divider lines bolder */
-hr {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  border-color: #DEC8B6;
-}
-
-.divider {
- border-color: #000; 
-}
-
-.dropdown-toggle {
-  width: 100%;
-  text-align: center;
-}
-
-.dropdown-menu {
-  min-width: 100%;
-    background-color: #F5EAE1 !important;
-  text-align: center;
-}
-
-/* position the image at the bottom of the buttons */
+/* position the house image at the bottom of the buttons */
 .house {
   position: absolute;
   top: -60px;
@@ -140,7 +153,8 @@ hr {
 }
 
 .greeting {
-  display: none; /*hide the greeting until the house image is clicked */
+  display: none;
+  /*hide the greeting until the house image is clicked */
   position: relative;
   top: -44px;
   text-align: right;
@@ -148,12 +162,17 @@ hr {
 }
 
 .footer-look {
-  position: relative; /* relative to the buttons */
-  /*top: 144px; /* leave room for the house image and house greeting*/
-  /*right: 0px;*/
-  /*margin-left: 54%; */
+  position: relative;
+  /* position the footer relative to the buttons, not to the house, */
+  /* which may vary in size depending on user's device */
+  top: 144px;
+  /* leave room for the house image and house greeting*/
   /*padding-bottom: 22px !important; /* raise the footer enough so that its anchor tag can be clicked */
   background-color: #F2E6DC;
   text-align: right;
   font-size: 122%;
+}
+
+a {
+  color: #333; /* make anchor tag in the footer same color as rest of text*/
 }
