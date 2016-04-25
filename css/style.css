@@ -50,6 +50,14 @@ h4 {
   padding: 19px;
 }
 
+.email-address {
+  text-align: center; important!;
+}
+
+.social-icon {
+  text-align: center; important!;
+}
+
 /* set the size for the single line of instructions below the headline */
 .instructions {
   font-size: 155%;
